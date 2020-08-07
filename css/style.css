@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    background: #010001;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 53px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1231px;
+    width: 90%;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.item{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.item:first-child{
+    margin-left: 0;
+}
+
+.item:last-child{
+    margin-right: 0;
+}
+
+.item-link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.secondly .item-link{
+    color: #808080;
+}
+
+.main-title{
+    text-align: center;
+    margin: 0px;
+    padding-top: 120px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+   
+    margin: 0px;
+    padding: 0px;
+}
+
+.text-rocket{
+    max-width: 268px;
+    margin: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%; 
+    padding-top: 26px;
+}
+
+.text-rocket:after{
+    display: block;
+    content: '';
+  
+    width: 1px;
+    height: 60px;
+
+    background-color: #FFFFFF;
+
+    margin: auto;
+
+    margin-top: 26px;
+}
+
+.video{
+    height: 727px;
+    max-width: 922px;
+    width: 90%;
+
+    margin: auto;
+}
+
+.features{
+    /* position: relative; */
+    margin: 0px;
+    padding: 0px;
+    margin-left: 150px;
+    margin-top: 200px;
+}
+
+.features-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    width: 177px;
+
+    margin: 0px;
+    margin-bottom: 45px;
+}
+
+.table{
+    max-width: 600px;
+    width: 90%;
+
+    min-height: 200px;
+}
+
+.colomn{
+    max-width: 300px;
+   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 179.69%;
+}
+
+.performance{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 150px;   
+    margin-top: 200px;
+}
+
+.performance-title{
+    width: 173px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+
+    margin-bottom: 45px;
+}
+
+.text{
+    width: 480px;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+.rocket{
+    position: absolute;
+    /* top: 1700px; */
+    top: 1600px;
+        width: 200px;
+    right: 150px;
+    /* width: 300px; */
+    z-index: 99;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.footer .logo{
+    margin-bottom: 43px;
+}
+
+.footer-nav{
+    margin-bottom: 28px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.footer-text{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    color: #808080;
+}
+
+.footer-text a{
+    color: #808080;
+    text-decoration: none;
+}
+
+.button{
+    margin-bottom: 131px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    min-width: 260px;
+    min-height: 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .main-title{
+        padding-top: 60px;
+    }
+
+    .features{
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    .performance{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+    .rocket{
+        position: absolute;
+        /* top: 1700px; */
+        top: 700px;
+            width: 150px;
+        right: 150px;
+        /* width: 300px; */
+        z-index: 99;
+    }
+
+    .footer{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width: 576px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rocket{
+        /* position: static;
+        left: 50px; */
+        display: none;
+    }
+}
